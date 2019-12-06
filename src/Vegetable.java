@@ -9,7 +9,6 @@ public class Vegetable implements Item{
 
     @Override
     public String getName() {
-        System.out.println(this.itemName);
         return this.itemName;
     }
 
