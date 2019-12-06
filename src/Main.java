@@ -3,29 +3,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
+        GenerateData generateData = new GenerateData();
+        ArrayList<Item> items = generateData.getList();
+        // Store inventory from GenerateData.java in local 'items' ArrayList
         Scanner prompt = new Scanner(System.in);
         int response;
-        ItemFactory itemFactory = new ItemFactory();
-        Item carrot = itemFactory.getItem("Vegetable");
-        carrot.setName("Carrot");
-        Item car = itemFactory.getItem("Vegetable");
-        car.setName("Carrot");
-        ArrayList<Item> items = new ArrayList<>();
-        items.add(carrot);
-        items.add(car);
-
-
-
 
         while(true){
             System.out.println("What would you like to do?\n1 - View inventory\n2 - Add item\n3 - Delete item\n4 - Exit program");
             response = prompt.nextInt();
             switch (response){
                 case 1:
-                    for (int i = 0; i < items.size(); i++) {
-                        System.out.println(items.get(i).getName());
-                    }
+                    showItems(items);
                     break;
                 case 2:
                     System.out.println(response);
@@ -62,8 +51,10 @@ public class Main {
 
     }
 
-    public static void showItems(){
-
+    public static void showItems(ArrayList<Item> items){
+        for (int i = 0; i < items.size(); i++) {
+            System.out.println(items.get(i).getName());
+        }
 
     }
 
