@@ -1,6 +1,7 @@
 public class Vegetable implements Item{
 
     private String itemName;
+    private int itemAmount;
 
     @Override
     public int setWeight(int itemWeight) {
@@ -8,7 +9,12 @@ public class Vegetable implements Item{
     }
 
     @Override
-    public int setAmount(int itemAmount) {
+    public void setAmount(int itemAmount) {
+        this.itemAmount = itemAmount;
+    }
+
+    @Override
+    public int getAmount() {
         return itemAmount;
     }
 

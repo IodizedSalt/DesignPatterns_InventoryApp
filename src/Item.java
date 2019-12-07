@@ -10,7 +10,9 @@ public interface Item {
     //int getWeight();
     int setWeight(int itemWeight);
 
-    int setAmount(int itemAmount);
+    void setAmount(int itemAmount);
+
+    int getAmount();
 
     String getName();
     String setName(String itemName);

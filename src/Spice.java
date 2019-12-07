@@ -1,5 +1,6 @@
 public class Spice implements Item {
     private String itemName;
+    private int itemAmount;
 
     @Override
     public int setWeight(int itemWeight) {
@@ -7,8 +8,13 @@ public class Spice implements Item {
     }
 
     @Override
-    public int setAmount(int itemAmount) {
-        return itemAmount;
+    public void setAmount(int itemAmount) {
+        this.itemAmount = itemAmount;
+    }
+
+    @Override
+    public int getAmount() {
+        return 0;
     }
 
     @Override

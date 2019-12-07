@@ -30,31 +30,12 @@ public class Main {
 
         }
 
-//        ItemFactory itemFactory = new ItemFactory();
-//
-//        Item carrot = itemFactory.getItem("Vegetable");
-//        carrot.setName("Carrot");
-////
-//        Item apple = itemFactory.getItem("Fruit");
-//        apple.setName("Apple");
-//
-//        Item pork = itemFactory.getItem("Meat");
-//        pork.setName("Pork");
-//
-//        Item melange = itemFactory.getItem("Spice");
-//        melange.setName("Melange");
-//
-//
-//        carrot.getName();
-//        apple.getName();
-//        pork.getName();
-//        melange.getName();
-
     }
 
     public static void showItems(ArrayList<Item> items){
         for (int i = 0; i < items.size(); i++) {
-            System.out.println(items.get(i).getName());
+            Item item = items.get(i);
+            System.out.println("Item name: " + item.getName() + "| Amount: " + item.getAmount());
         }
 
     }
@@ -64,11 +45,24 @@ public class Main {
         switch (input) {
             case 1:
                 Item vegetableToAdd = factory.getItem("Vegetable");
-
                 Context context = new Context(new VegetableStrategy());
-                vegetableToAdd = context.executeStrategy(prompt, vegetableToAdd);
 
-                items.add(vegetableToAdd);
+                System.out.println("What type of Vegetable?");
+                String vegetableName = prompt.next();
+
+                vegetableToAdd.setName(vegetableName);
+                int position = isDuplicate(items, vegetableName);
+                if(isDuplicate(items, vegetableName) != 999999 ){
+                    //builder pattern
+                    int currentAmount = items.get(position).getAmount();
+                    int addedItemAmount = context.oldItemStrategy(prompt, vegetableToAdd, vegetableName).getAmount();
+                    int newAmount = currentAmount + addedItemAmount;
+                    items.get(position).setAmount(newAmount);
+                }else{
+                    vegetableToAdd = context.newItemStrategy(prompt, vegetableToAdd, vegetableName);
+                    items.add(vegetableToAdd);
+                }
+
                 break;
             case 2:
                 break;
@@ -76,6 +70,16 @@ public class Main {
                 break;
             case 4:
         }
+    }
+
+        public static int isDuplicate(ArrayList<Item> items, String itemName) {
+       //Use iterator?
+        for (int i = 0; i < items.size() ; i++) {
+            if(items.get(i).getName().equalsIgnoreCase(itemName)){
+                return i;
+            }
+        }
+        return 999999;
     }
 
 }

@@ -15,7 +15,11 @@ public class Context {
         this.strategy = strategy;
     }
 
-    public Item executeStrategy(Scanner scanner, Item item){
-        return strategy.addItem(scanner, item);
+    public Item newItemStrategy(Scanner scanner, Item item, String itemName){
+        return strategy.addNewItem(scanner, item, itemName);
+    }
+
+    public Item oldItemStrategy(Scanner scanner, Item item, String itemName){
+        return strategy.addOldItem(scanner, item, itemName);
     }
 }
