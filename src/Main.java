@@ -18,7 +18,7 @@ public class Main {
                     showItems(items);
                     break;
                 case 2:
-                    addItemPrompt(prompt, itemFactory, items);
+                    items = addItemPrompt(prompt, itemFactory, items);
                     break;
                 case 3:
                     System.out.println(response);
@@ -35,11 +35,15 @@ public class Main {
     public static void showItems(ArrayList<Item> items){
         for (int i = 0; i < items.size(); i++) {
             Item item = items.get(i);
+            System.out.println(item.getClass());
+            // Decorator here
             System.out.println("Item name: " + item.getName() + " | Amount: " + item.getAmount());
+
+
         }
 
     }
-    public static void addItemPrompt(Scanner prompt, ItemFactory factory, ArrayList<Item> items) {
+    public static ArrayList<Item> addItemPrompt(Scanner prompt, ItemFactory factory, ArrayList<Item> items) {
         System.out.println("What food you like to add?\n1 - Vegetable\n2 - Fruit\n3 - Meat\n4 - Spice");
         int input = prompt.nextInt();
 
@@ -48,11 +52,11 @@ public class Main {
 
         switch (input) {
             case 1:
-                Strategy vegetableStrategy = new VegetableStrategy();
-                addFoodType("Vegetable", vegetableStrategy, factory, itemName, items, prompt);
-                break;
+                Strategy vegetableStrategy = new GreensStrategy();
+                return addFoodType("Vegetable", vegetableStrategy, factory, itemName, items, prompt);
+
             case 2:
-                Strategy fruitStrategy = new FruitStrategy();
+                Strategy fruitStrategy = new GreensStrategy();
                 addFoodType("Fruit", fruitStrategy, factory, itemName, items, prompt);
                 break;
             case 3:
@@ -64,34 +68,18 @@ public class Main {
                 addFoodType("Spice", spiceStrategy, factory, itemName, items, prompt);
                 break;
         }
+        return items;
     }
 
-    private static int isDuplicate(ArrayList<Item> items, String itemName) {
-   //Use iterator?
-    for (int i = 0; i < items.size() ; i++) {
-        if(items.get(i).getName().equalsIgnoreCase(itemName)){
-            return i;
-        }
-    }
-    return -1;
-    }
 
-    private static void addFoodType(String choice, Strategy strategy, ItemFactory factory, String itemName, ArrayList<Item> items, Scanner prompt){
+    private static ArrayList<Item> addFoodType(String choice, Strategy strategy, ItemFactory factory, String itemName, ArrayList<Item> items, Scanner prompt){
         //builder pattern
         Item itemToAdd = factory.getItem(choice);
         Context context = new Context(strategy);
 
         itemToAdd.setName(itemName);
-        int position = isDuplicate(items, itemName);
-
-        if(isDuplicate(items, itemName) != -1 ){
-            int currentAmount = items.get(position).getAmount();
-            context.existingStrategy(prompt, items.get(position), itemName, currentAmount);
-        }else{
-            itemToAdd = context.newItemStrategy(prompt, itemToAdd, itemName);
-            items.add(itemToAdd);
-        }
-
+        items = context.addItemStrategy(prompt, items, itemToAdd, itemName);
+        return items;
 
     }
 

@@ -2,6 +2,7 @@ public  class Meat implements Item {
 
     private String itemName;
     private int itemAmount;
+    private String itemExpirationDate;
 
     @Override
     public int setWeight(int itemWeight) {
@@ -19,9 +20,21 @@ public  class Meat implements Item {
     }
 
     @Override
+    public void setExpirationDate(String itemExpirationDate) {
+        this.itemExpirationDate = expirationDate;
+    }
+
+    @Override
     public String getName() {
-        System.out.println(this.itemName);
         return this.itemName;
+    }
+
+    public String getItemExpirationDate() {
+        return itemExpirationDate;
+    }
+
+    public void setItemExpirationDate(String itemExpirationDate) {
+        this.itemExpirationDate = itemExpirationDate;
     }
 
     @Override

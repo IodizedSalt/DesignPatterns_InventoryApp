@@ -1,7 +1,7 @@
 public class Spice implements Item {
     private String itemName;
     private int itemAmount;
-
+    private String itemExpirationDate;
     @Override
     public int setWeight(int itemWeight) {
         return 0;
@@ -14,12 +14,16 @@ public class Spice implements Item {
 
     @Override
     public int getAmount() {
-        return 0;
+        return itemAmount;
+    }
+
+    @Override
+    public void setExpirationDate(String itemExpirationDate) {
+        this.itemExpirationDate = itemExpirationDate;
     }
 
     @Override
     public String getName() {
-        System.out.println(this.itemName);
         return this.itemName;
     }
 

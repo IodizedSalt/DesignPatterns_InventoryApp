@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Context {
@@ -15,12 +16,10 @@ public class Context {
         this.strategy = strategy;
     }
 
-    public Item newItemStrategy(Scanner scanner, Item item, String itemName){
-        return strategy.addNewItem(scanner, item, itemName);
-    }
 
-    public void existingStrategy(Scanner scanner, Item item, String itemName, int currentAmount){
-        strategy.addToExistingItem(scanner, item, itemName, currentAmount);
+
+    public ArrayList<Item> addItemStrategy(Scanner scanner, ArrayList<Item> items, Item itemToAdd, String itemName){
+        return strategy.addingNewItem(scanner, items, itemToAdd, itemName);
     }
 
 
