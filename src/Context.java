@@ -19,7 +19,9 @@ public class Context {
         return strategy.addNewItem(scanner, item, itemName);
     }
 
-    public Item oldItemStrategy(Scanner scanner, Item item, String itemName){
-        return strategy.addOldItem(scanner, item, itemName);
+    public void existingStrategy(Scanner scanner, Item item, String itemName, int currentAmount){
+        strategy.addToExistingItem(scanner, item, itemName, currentAmount);
     }
+
+
 }
