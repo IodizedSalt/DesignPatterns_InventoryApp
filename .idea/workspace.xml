@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb051ed9-346b-4d23-8591-1df136569c52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Fruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Item.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Meat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Meat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Spice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Spice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Vegetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Vegetable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Meat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vegetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vegetable.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,18 +25,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="974" />
-    <option name="height" value="527" />
   </component>
   <component name="ProjectId" id="1UWArDFFCoDVLlZfI4V2yxIxuGU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -38,6 +42,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -77,6 +84,7 @@
       <updated>1575462173381</updated>
       <workItem from="1575462176547" duration="6376000" />
       <workItem from="1575639187334" duration="2962000" />
+      <workItem from="1575726540455" duration="3536000" />
     </task>
     <servers />
   </component>

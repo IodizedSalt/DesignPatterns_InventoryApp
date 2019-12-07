@@ -8,6 +8,11 @@ public class Vegetable implements Item{
     }
 
     @Override
+    public int setAmount(int itemAmount) {
+        return itemAmount;
+    }
+
+    @Override
     public String getName() {
         return this.itemName;
     }

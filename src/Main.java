@@ -6,6 +6,7 @@ public class Main {
         GenerateData generateData = new GenerateData();
         ArrayList<Item> items = generateData.getList();
         // Store inventory from GenerateData.java in local 'items' ArrayList
+        ItemFactory itemFactory = new ItemFactory();
         Scanner prompt = new Scanner(System.in);
         int response;
 
@@ -17,7 +18,7 @@ public class Main {
                     showItems(items);
                     break;
                 case 2:
-                    System.out.println(response);
+                    addItemPrompt(prompt, itemFactory, items);
                     break;
                 case 3:
                     System.out.println(response);
@@ -56,6 +57,25 @@ public class Main {
             System.out.println(items.get(i).getName());
         }
 
+    }
+    public static void addItemPrompt(Scanner prompt, ItemFactory factory, ArrayList<Item> items) {
+        System.out.println("What food you like to add?\n1 - Vegetable\n2 - Fruit\n3 - Meat\n4 - Spice");
+        int input = prompt.nextInt();
+        switch (input) {
+            case 1:
+                Item vegetableToAdd = factory.getItem("Vegetable");
+
+                Context context = new Context(new VegetableStrategy());
+                vegetableToAdd = context.executeStrategy(prompt, vegetableToAdd);
+
+                items.add(vegetableToAdd);
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+        }
     }
 
 }

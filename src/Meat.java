@@ -9,6 +9,11 @@ public  class Meat implements Item {
     }
 
     @Override
+    public int setAmount(int itemAmount) {
+        return itemAmount;
+    }
+
+    @Override
     public String getName() {
         System.out.println(this.itemName);
         return this.itemName;
