@@ -14,7 +14,7 @@ public  class Fruit implements Item {
         this.itemAmount = itemAmount;
     }
 
-        @Override
+    @Override
     public int getAmount() {
         return 0;
     }

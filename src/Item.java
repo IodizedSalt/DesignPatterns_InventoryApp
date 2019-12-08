@@ -14,7 +14,7 @@ public interface Item {
 
     int getAmount();
 
-     void setExpirationDate(String expirationDate);
+    void setExpirationDate(String expirationDate);
     String getName();
     String setName(String itemName);
 
