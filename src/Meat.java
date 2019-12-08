@@ -1,9 +1,15 @@
-public class Meat implements Item {
+public class Meat extends Item {
 
     private String itemName;
-    private int itemAmount;
     private String itemExpirationDate;
     private int itemWeight;
+
+
+
+    @Override
+    public Strategy getStrategy(){
+        return new MeatStrategy();
+    }
 
     @Override
     public void setWeight(int itemWeight) {
@@ -15,15 +21,15 @@ public class Meat implements Item {
         return itemWeight;
     }
 
-    @Override
-    public void setAmount(int itemAmount) {
-        this.itemAmount = itemAmount;
-    }
-
-    @Override
-    public int getAmount() {
-        return itemAmount;
-    }
+//    @Override
+//    public void setAmount(int itemAmount) {
+//        this.itemAmount = itemAmount;
+//    }
+//
+//    @Override
+//    public int getAmount() {
+//        return itemAmount;
+//    }
 
     public void setExpirationDate(String itemExpirationDate) {
         this.itemExpirationDate = itemExpirationDate;
@@ -33,15 +39,15 @@ public class Meat implements Item {
         return itemExpirationDate;
     }
 
-    @Override
-    public void setName(String itemName) {
-        this.itemName = itemName;
-    }
-
-    @Override
-    public String getName() {
-        return this.itemName;
-    }
+//    @Override
+//    public void setName(String itemName) {
+//        this.itemName = itemName;
+//    }
+//
+//    @Override
+//    public String getName() {
+//        return this.itemName;
+//    }
 
     @Override
     public String displayInformation() {

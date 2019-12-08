@@ -1,10 +1,15 @@
-public class Spice implements Item {
+public class Spice extends Item {
     private String itemName;
     private int itemAmount;
-//    private String itemExpirationDate;
+    private String itemExpirationDate;
     private int itemWeight;
 
-//    @Override
+    @Override
+    public Strategy getStrategy(){
+        return new SpiceStrategy();
+    }
+
+    //    @Override
     public void setWeight(int itemWeight) {
         this.itemWeight = itemWeight;
     }
@@ -24,13 +29,13 @@ public class Spice implements Item {
         return itemAmount;
     }
 
-//    public void setExpirationDate(String itemExpirationDate) {
-//        this.itemExpirationDate = itemExpirationDate;
-//    }
-//
-//    public String getExpirationDate() {
-//        return itemExpirationDate;
-//    }
+    public void setExpirationDate(String itemExpirationDate) {
+        this.itemExpirationDate = itemExpirationDate;
+    }
+
+    public String getExpirationDate() {
+        return itemExpirationDate;
+    }
 
 //    @Override
     public void setName(String itemName) {

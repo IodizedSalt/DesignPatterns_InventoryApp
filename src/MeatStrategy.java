@@ -9,12 +9,19 @@ public class MeatStrategy implements Strategy {
         System.out.printf("How many kgs of %s \n ", itemName);
         int amount = scanner.nextInt();
 
+        System.out.printf("How many pieces of %s \n ", itemName);
+        int quantity = scanner.nextInt();
+
+
         System.out.println("What is the expiration date?");
         String expirationDate = scanner.next();
 
-        itemToAdd.setWeight(amount);
-        itemToAdd.setExpirationDate(expirationDate);
-        items.add(itemToAdd);
+        itemToAdd.setAmount(quantity);
+
+        Meat newMeatItem = (Meat) itemToAdd;
+        newMeatItem.setWeight(amount);
+        newMeatItem.setExpirationDate(expirationDate);
+        items.add(newMeatItem);
         return items;
     }
 

@@ -1,25 +1,43 @@
-public interface Item {
+public abstract class Item {
 
-//    String itemName = null; // Name of item
-//    int weight = 0; // Item weight in g/kg
-//    int amount = 0; // Item amount in pieces/boxes/cans/bags
-//    String expirationDate = null; // Date of expiration of item
-//    String itemBrand = null; // Brand of item
+    private String itemName;
+    private int itemAmount;
+    private int itemWeight;
+    private Strategy strategy;
 
 
-    void setWeight(int itemWeight);
-    int getWeight();
+    void setWeight(int itemWeight){
+        this.itemWeight = itemWeight;
+    }
 
-    void setAmount(int itemAmount);
-    int getAmount();
+    int getWeight(){
+        return itemWeight;
+    }
 
-    void setExpirationDate(String expirationDate);
-//    String getExpirationDate();
+    void setAmount(int itemAmount){
+        this.itemAmount = itemAmount;
 
-    void setName(String itemName);
-    String getName();
+    }
 
-    String displayInformation();
+    int getAmount(){
+        return itemAmount;
+    }
+
+    Strategy getStrategy(){
+        return strategy;
+    }
+
+    void setName(String itemName){
+        this.itemName = itemName;
+    }
+
+    String getName(){
+        return itemName;
+    }
+//
+    String displayInformation(){
+        return null;
+    }
 
 
 

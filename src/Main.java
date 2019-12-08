@@ -32,53 +32,33 @@ public class Main {
 
     }
 
-    public static void showItems(ArrayList<Item> items){
+    private static void showItems(ArrayList<Item> items){
         for (int i = 0; i < items.size(); i++) {
             Item item = items.get(i);
             System.out.println(item.getClass());
             // Decorator here
             System.out.println("Item name: " + item.getName() + " | Amount: " + item.getAmount());
-
-
         }
 
     }
-    public static ArrayList<Item> addItemPrompt(Scanner prompt, ItemFactory factory, ArrayList<Item> items) {
+
+    private static ArrayList<Item> addItemPrompt(Scanner prompt, ItemFactory factory, ArrayList<Item> items) {
+
         System.out.println("What food you like to add?\n1 - Vegetable\n2 - Fruit\n3 - Meat\n4 - Spice");
-        int input = prompt.nextInt();
+        String input = prompt.next();
+
         System.out.println("What is the name of the item?");
         String itemName = prompt.next();
 
-        switch (input) {
-            case 1:
-                Strategy vegetableStrategy = new GreensStrategy();
-                return addFoodType("Vegetable", vegetableStrategy, factory, itemName, items, prompt);
+        Item itemToAdd = factory.getItem(input);
+        itemToAdd.setName(itemName);
 
-            case 2:
-                Strategy fruitStrategy = new GreensStrategy();
-                return addFoodType("Fruit", fruitStrategy, factory, itemName, items, prompt);
-
-            case 3:
-                Strategy meatStrategy = new MeatStrategy();
-                return addFoodType("Meat", meatStrategy, factory, itemName, items, prompt);
-
-            case 4:
-                Strategy spiceStrategy = new SpiceStrategy();
-                return addFoodType("Spice", spiceStrategy, factory, itemName, items, prompt);
-        }
-        return items;
-    }
-
-
-    private static ArrayList<Item> addFoodType(String choice, Strategy strategy, ItemFactory factory, String itemName, ArrayList<Item> items, Scanner prompt){
-    //builder pattern
-        Item itemToAdd = factory.getItem(choice);
+        Strategy strategy = itemToAdd.getStrategy();
         Context context = new Context(strategy);
 
-        itemToAdd.setName(itemName);
         items = context.addItemStrategy(prompt, items, itemToAdd, itemName);
-        return items;
 
+        return items;
     }
 
 }
