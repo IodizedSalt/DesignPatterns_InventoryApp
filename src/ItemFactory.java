@@ -12,6 +12,7 @@ public class ItemFactory {
 
         } else if(itemName.equalsIgnoreCase("Meat")){
             return new Meat();
+
         } else if(itemName.equalsIgnoreCase("Spice")){
             return new Spice();
         }

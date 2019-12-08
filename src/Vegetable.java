@@ -2,11 +2,17 @@ public class Vegetable implements Item{
 
     private String itemName;
     private int itemAmount;
-    private String itemExpirationDate;
+//    private String itemExpirationDate;
+    private int itemWeight;
 
     @Override
-    public int setWeight(int itemWeight) {
-        return 0;
+    public void setWeight(int itemWeight) {
+        this.itemWeight = itemWeight;
+    }
+
+    @Override
+    public int getWeight() {
+        return itemWeight;
     }
 
     @Override
@@ -19,9 +25,19 @@ public class Vegetable implements Item{
         return itemAmount;
     }
 
+//    @Override
+//    public void setExpirationDate(String expirationDate) {
+//        this.itemExpirationDate = itemExpirationDate;
+//    }
+//
+//    @Override
+//    public String getExpirationDate() {
+//        return itemExpirationDate;
+//    }
+
     @Override
-    public void setExpirationDate(String expirationDate) {
-        this.itemExpirationDate = itemExpirationDate;
+    public void setName(String itemName) {
+        this.itemName = itemName;
     }
 
     @Override
@@ -30,8 +46,7 @@ public class Vegetable implements Item{
     }
 
     @Override
-    public String setName(String itemName) {
-        this.itemName = itemName;
-        return itemName;
+    public String displayInformation() {
+        return this.itemName;
     }
 }

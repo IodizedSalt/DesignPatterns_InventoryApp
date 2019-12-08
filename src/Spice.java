@@ -1,35 +1,49 @@
 public class Spice implements Item {
     private String itemName;
     private int itemAmount;
-    private String itemExpirationDate;
-    @Override
-    public int setWeight(int itemWeight) {
-        return 0;
+//    private String itemExpirationDate;
+    private int itemWeight;
+
+//    @Override
+    public void setWeight(int itemWeight) {
+        this.itemWeight = itemWeight;
     }
 
-    @Override
+//    @Override
+    public int getWeight() {
+        return itemWeight;
+    }
+
+//    @Override
     public void setAmount(int itemAmount) {
         this.itemAmount = itemAmount;
     }
 
-    @Override
+//    @Override
     public int getAmount() {
         return itemAmount;
     }
 
-    @Override
-    public void setExpirationDate(String itemExpirationDate) {
-        this.itemExpirationDate = itemExpirationDate;
+//    public void setExpirationDate(String itemExpirationDate) {
+//        this.itemExpirationDate = itemExpirationDate;
+//    }
+//
+//    public String getExpirationDate() {
+//        return itemExpirationDate;
+//    }
+
+//    @Override
+    public void setName(String itemName) {
+        this.itemName = itemName;
     }
 
-    @Override
+//    @Override
     public String getName() {
         return this.itemName;
     }
 
     @Override
-    public String setName(String itemName) {
-        this.itemName = itemName;
-        return itemName;
+    public String displayInformation() {
+        return this.itemName;
     }
 }

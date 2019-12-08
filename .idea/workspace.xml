@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb051ed9-346b-4d23-8591-1df136569c52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/META-INF/DesignPattern_MandatoryExam.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Fruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Meat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Meat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Spice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Spice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/SpiceStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/SpiceStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Vegetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Vegetable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GreensStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GreensStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Meat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Meat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeatStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Spice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Spice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpiceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpiceStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Strategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vegetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vegetable.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Interface" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -33,7 +53,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">

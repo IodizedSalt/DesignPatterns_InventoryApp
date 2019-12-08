@@ -16,7 +16,6 @@ public class GreensStrategy implements Strategy {
             items.get(position).setAmount(currentAmount + vegetableAmount);
             return items;
         }else{
-
             System.out.printf("How many %s\n", itemName);
             int vegetableAmount = scanner.nextInt();
             itemToAdd.setAmount(vegetableAmount);

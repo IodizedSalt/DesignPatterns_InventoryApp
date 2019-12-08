@@ -46,7 +46,6 @@ public class Main {
     public static ArrayList<Item> addItemPrompt(Scanner prompt, ItemFactory factory, ArrayList<Item> items) {
         System.out.println("What food you like to add?\n1 - Vegetable\n2 - Fruit\n3 - Meat\n4 - Spice");
         int input = prompt.nextInt();
-
         System.out.println("What is the name of the item?");
         String itemName = prompt.next();
 
@@ -57,23 +56,22 @@ public class Main {
 
             case 2:
                 Strategy fruitStrategy = new GreensStrategy();
-                addFoodType("Fruit", fruitStrategy, factory, itemName, items, prompt);
-                break;
+                return addFoodType("Fruit", fruitStrategy, factory, itemName, items, prompt);
+
             case 3:
                 Strategy meatStrategy = new MeatStrategy();
-                addFoodType("Meat", meatStrategy, factory, itemName, items, prompt);
-                break;
+                return addFoodType("Meat", meatStrategy, factory, itemName, items, prompt);
+
             case 4:
                 Strategy spiceStrategy = new SpiceStrategy();
-                addFoodType("Spice", spiceStrategy, factory, itemName, items, prompt);
-                break;
+                return addFoodType("Spice", spiceStrategy, factory, itemName, items, prompt);
         }
         return items;
     }
 
 
     private static ArrayList<Item> addFoodType(String choice, Strategy strategy, ItemFactory factory, String itemName, ArrayList<Item> items, Scanner prompt){
-        //builder pattern
+    //builder pattern
         Item itemToAdd = factory.getItem(choice);
         Context context = new Context(strategy);
 
