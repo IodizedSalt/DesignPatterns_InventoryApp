@@ -2,4 +2,5 @@ global-groovy.log
 soapui-errors.log
 soapui.log
 DesignPattern_MandatoryExam.iml
-/.idea/
+/.idea/workspace.xml
+
