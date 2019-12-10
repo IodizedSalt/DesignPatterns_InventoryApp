@@ -18,10 +18,9 @@ public class MeatStrategy implements Strategy {
 
         itemToAdd.setAmount(quantity);
 
-        Meat newMeatItem = (Meat) itemToAdd;
-        newMeatItem.setWeight(amount);
-        newMeatItem.setExpirationDate(expirationDate);
-        items.add(newMeatItem);
+        itemToAdd.setWeight(amount);
+        itemToAdd.setExpirationDate(expirationDate);
+        items.add(itemToAdd);
         return items;
     }
 

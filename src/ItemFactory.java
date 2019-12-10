@@ -1,6 +1,6 @@
 public class ItemFactory {
 
-    public Item getItem(String itemName){
+     Item getItem(String itemName){
         if(itemName == null){
             return null;
         }

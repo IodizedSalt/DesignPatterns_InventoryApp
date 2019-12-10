@@ -37,7 +37,7 @@ public class Main {
             Item item = items.get(i);
             System.out.println(item.getClass());
             // Decorator here
-            System.out.println("Item name: " + item.getName() + " | Amount: " + item.getAmount());
+            System.out.println(item.displayInformation());
         }
 
     }
