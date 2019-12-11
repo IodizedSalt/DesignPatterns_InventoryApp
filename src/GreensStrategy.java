@@ -25,7 +25,6 @@ public class GreensStrategy implements Strategy {
     }
 
     private static int isDuplicate(ArrayList<Item> items, String itemName) {
-        //Use iterator?
         for (int i = 0; i < items.size() ; i++) {
             if(items.get(i).getName().equalsIgnoreCase(itemName)){
                 return i;

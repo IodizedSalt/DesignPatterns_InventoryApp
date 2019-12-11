@@ -39,7 +39,7 @@ public abstract class Item {
     String getName(){
         return itemName;
     }
-//
+
     String displayInformation(){
         return "Item name: " + this.getName() + " | Quantity: " + this.getAmount();
     }
