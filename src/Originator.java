@@ -7,12 +7,15 @@ public class Originator {
         this.state = state;
     }
 
-    public String getState(){
-        for (int i = 0; i < state.size(); i++) {
-            Item item = state.get(i);
-            return item.displayInformation();
-        }
-        return null;
+//    public String getState(){
+//        for (int i = 0; i < state.size(); i++) {
+//            Item item = state.get(i);
+//            return item.displayInformation();
+//        }
+//        return null;
+//    }
+    public ArrayList<Item> getState(){
+        return state;
     }
 
     public Memento saveStateToMemento(){

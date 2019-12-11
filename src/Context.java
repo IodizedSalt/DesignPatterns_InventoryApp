@@ -15,8 +15,7 @@ public class Context {
 
 
     ArrayList<Item> addItemStrategy(Scanner scanner, ItemFactory factory, ArrayList<Item> items){
-        GenerateData generateData = new GenerateData();
-        generateData.addItem();
+        GenerateData.addItem();
 //        System.out.println("What food you like to add?\n1 - Vegetable\n2 - Fruit\n3 - Meat\n4 - Spice");
         String input = scanner.next();
 
@@ -35,6 +34,17 @@ public class Context {
         this.setStrategy(itemToAdd.getStrategy());
 
         return strategy.addingNewItem(scanner, items, itemToAdd, itemName);
+    }
+
+    ArrayList<Item> deleteItemStrategy(Scanner scanner, ArrayList<Item> items){
+        String input = scanner.next();
+        for (int i = 0; i < items.size(); i++) {
+            Item item = items.get(i);
+            if(item.getName().equalsIgnoreCase(input)){
+                items.remove(item);
+            }
+        }
+        return items;
     }
 
 
