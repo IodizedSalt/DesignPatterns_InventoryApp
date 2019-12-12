@@ -34,10 +34,10 @@ public class Main {
                     showItems(items);
                     break;
                 case 2:
-                    originator.setState(prevState);
-                    careTaker.add(originator.saveStateToMemento()); //Save state before insertion
+                    originator.setState(prevState);                     // Set state of the memento to hold the prevState (the items in the list before the new insertion)
+                    careTaker.add(originator.saveStateToMemento());     // Save state before insertion
 
-                    prevState.clear();
+                    prevState.clear();                                  // Clear the prevState array and then populate with the new items after setting originator State. Prevents Heap exception and duplicated elements
                     for (Item i:items) {
                         prevState.add(i);
                     }
@@ -45,7 +45,7 @@ public class Main {
                     originator.setState(items);
                     break;
                 case 3:
-                    prevState.clear();
+                    prevState.clear();                                  // Clear the prevState array and then populate with the existing items in the inventory before a deletion occurs.
                     for (Item i:originator.getState()){
                         prevState.add(i);
                     }
@@ -56,11 +56,11 @@ public class Main {
                     break;
 
                 case 4:
-                    tmp.clear();
+                    tmp.clear();                                       // Clear the tmp list and populate with prevState elements before an undo is done
                     for (Item i:prevState) {
                         tmp.add(i);
                     }
-                    if(prevState.size() >0){
+                    if(prevState.size() >0){                            // Pop the top element off the array of prevState. This is probably an incorrect way of doing an undo feature.
                         prevState.remove(prevState.size()-1);
                     }
                     originator.setState(tmp);
