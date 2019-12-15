@@ -7,7 +7,7 @@ public class Memento {
         this.state = state;
     }
 
-    public ArrayList<Item> getState(){
+    ArrayList<Item> getState(){
         return state;
     }
 }

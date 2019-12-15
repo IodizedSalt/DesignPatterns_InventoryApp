@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        GenerateData generateData = new GenerateData();
-        ArrayList<Item> items = generateData.getList();
+        ArrayList<Item> items = GenerateData.getList();
         // Store inventory from GenerateData.java in local 'items' ArrayList
         ItemFactory itemFactory = new ItemFactory();
         Context context = new Context();
@@ -16,19 +15,18 @@ public class Main {
         int response;
 
         while(true){
-            generateData.printMenu();
+            GenerateData.printMenu();
 //            System.out.println("| What would you like to do? |\n| 1 - View inventory |\n| 2 - Add item |\n| 3 - Delete item |\n| 4 - Exit program |");
+            originator.setState(items);
+            careTaker.add(originator.saveStateToMemento());
+
             response = prompt.nextInt();
             switch (response){
                 case 1:
                     showItems(items);
                     break;
                 case 2:
-                    //
-                    originator.setState(items);
-                    careTaker.add(originator.saveStateToMemento());
-                    //
-                    items = context.addItemStrategy(prompt, itemFactory, items);
+
                     break;
                 case 3:
                     showItems(items);
@@ -36,12 +34,12 @@ public class Main {
                     break;
                 case 4:
 
-                    //
-                    originator.getStateFromMemento(careTaker.get(0));
-                    System.out.println(originator.getState());
-                    //
-//                    System.out.println("Bye");
-//                    System.exit(0);
+                    System.out.println(items);
+                    break;
+
+                case 5:
+                        System.out.println("Bye");
+                        System.exit(0);
             }
         }
     }
@@ -51,7 +49,7 @@ public class Main {
             Item item = items.get(i);
             System.out.println(item.displayInformation());
         }
-        System.out.println(""); //Just an empty spacing line
+        System.out.println(); //Just an empty spacing line
     }
 
 }

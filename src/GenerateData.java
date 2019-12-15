@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class GenerateData {
+class GenerateData {
 
-        public ArrayList<Item> getList() {
+         static ArrayList<Item> getList() {
             ItemFactory itemFactory = new ItemFactory();
             Item car = itemFactory.getItem("Vegetable");
             car.setName("Carrot");
@@ -11,7 +11,7 @@ public class GenerateData {
             items.add(car);
             return items;
         }
-    public static void addItem(){
+     static void addItem(){
         String consoleSeparator = "------------------------------------";
         int consoleSeparatorLength = consoleSeparator.length();
 
@@ -79,7 +79,14 @@ public class GenerateData {
         }
         System.out.print("|\n");
 
-        String exitProgram = ("| 4 - Exit program");
+        String undoOption = ("| 4 - Undo last action");
+        System.out.print(undoOption);
+        for (int i = 1; i < (consoleSeparatorLength- undoOption.length()); i++) {
+            System.out.print(" ");
+        }
+        System.out.print("|\n");
+
+        String exitProgram = ("| 5 - Exit program");
         System.out.print(exitProgram);
         for (int i = 1; i < (consoleSeparatorLength- exitProgram.length()); i++) {
             System.out.print(" ");
