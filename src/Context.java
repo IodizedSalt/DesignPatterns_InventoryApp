@@ -8,15 +8,12 @@ public class Context {
         this.strategy = strategy;
     }
 
-
     public Strategy getStrategy() {
         return strategy;
     }
 
-
     ArrayList<Item> addItemStrategy(Scanner scanner, ItemFactory factory, ArrayList<Item> items){
-        GenerateData.addItem();
-//        System.out.println("What food you like to add?\n1 - Vegetable\n2 - Fruit\n3 - Meat\n4 - Spice");
+        GenerateData.addItem(); // Prints the console output prompt nicely
         String input = scanner.next();
 
         Item itemToAdd = factory.getItem(input);

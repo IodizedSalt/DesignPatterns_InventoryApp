@@ -12,7 +12,6 @@ public class MeatStrategy implements Strategy {
         System.out.printf("How many pieces of %s \n ", itemName);
         int quantity = scanner.nextInt();
 
-
         System.out.println("What is the expiration date?");
         String expirationDate = scanner.next();
 

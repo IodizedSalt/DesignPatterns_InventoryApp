@@ -18,7 +18,6 @@ public class SpiceStrategy implements Strategy{
             System.out.printf("How much of %s\n", itemName);
             int amount = scanner.nextInt();
             itemToAdd.setAmount(amount);
-            System.out.println(itemToAdd.getClass());
             items.add(itemToAdd);
             return items;
         }

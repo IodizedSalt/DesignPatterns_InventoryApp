@@ -2,9 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GreensStrategy implements Strategy {
-
-
-
     @Override
     public ArrayList<Item> addingNewItem(Scanner scanner, ArrayList<Item> items, Item itemToAdd, String itemName) {
         if(isDuplicate(items, itemName) != -1 ){

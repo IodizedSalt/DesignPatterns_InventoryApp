@@ -1,9 +1,6 @@
 public class ItemFactory {
 
      Item getItem(String itemName){
-//        if(itemName == null){
-//            return null;
-//        }
         if(itemName.equalsIgnoreCase("Vegetable") || itemName.equals("1")){
             return new Vegetable();
 
