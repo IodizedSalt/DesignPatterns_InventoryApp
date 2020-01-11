@@ -19,7 +19,8 @@ public class Originator {
         return new Memento(state);
     }
 
-    public void getStateFromMemento(Memento memento) {
+    public ArrayList<Item> getStateFromMemento(Memento memento) {
         state = memento.getState();
+        return state;
     }
 }
