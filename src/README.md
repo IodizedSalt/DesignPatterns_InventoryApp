@@ -1,16 +1,16 @@
 - Factory
 
-- Strategy
+- strategy.strategy
 
 - Null Object
 
-- Memento
+- memento.memento
 
-`ItemFactory` generates different types of `Vegetables`, `Fruits`, `Meats`, and `Spices`
+`main.ItemFactory` generates different types of `Vegetables`, `Fruits`, `Meats`, and `Spices`
 
-`Strategy` determines what questions to ask depending on the item being added 
+`strategy.strategy` determines what questions to ask depending on the item being added 
 
 `Null Object` returns a null object if an invalid strategy is selected
 
-`Memento` keeps track of inventory state and returns previous state if an item is deleted 
+`memento.memento` keeps track of inventory state and returns previous state if an item is deleted 
 
