@@ -33,8 +33,8 @@ public class Main {
                     break;
 
                 case 2:
-                    originator.setState(new ArrayList<>(items));
-                    careTaker.add(originator.saveStateToMemento());
+                    originator.setState(new ArrayList<>(items));                     // Set state of the memento to hold the prevState (the items in the list before the new insertion)
+                    careTaker.add(originator.saveStateToMemento());     // Add to list of mementos the current memento state
                     items = context.addItemStrategy(prompt, itemFactory, items);
                     break;
 
@@ -45,11 +45,8 @@ public class Main {
                     showItems(items);
 
                     System.out.println("Which item to delete?");
-
                     items = context.deleteItemStrategy(prompt, items);
-                    originator.setState(items);
                     break;
-
                 case 4:
                     items = originator.getStateFromMemento(careTaker.get());
                     careTaker.pop();

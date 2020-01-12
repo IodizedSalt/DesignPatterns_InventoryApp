@@ -1,106 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="eb051ed9-346b-4d23-8591-1df136569c52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/item_types/Vegetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/item_types/Vegetable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/NoItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/NoItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/memento/CareTaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/memento/CareTaker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/memento/Originator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/memento/Originator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/Context.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/MeatStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/MeatStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/SpiceStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/SpiceStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/item_types/Vegetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item_types/Vegetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/NoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item_types/NoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/memento/CareTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/memento/CareTaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/memento/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/memento/Originator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/GreensStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/GreensStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/MeatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/MeatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strategy/SpiceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/SpiceStrategy.java" afterDir="false" />
-    </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Interface" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1UWArDFFCoDVLlZfI4V2yxIxuGU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/QUARANTINE/j-text-utils-0.3.3.jar!/" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Dk\Workspace\DesignPattern_MandatoryExam\out" />
-      <recent name="C:\Users\Dk\Workspace\DesignPattern_MandatoryExam" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="ItemTypes" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Dk\Workspace\DesignPattern_MandatoryExam\src" />
-    </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="DesignPattern_MandatoryExam" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainWithDebugComments" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.MainWithDebugComments" />
-      <module name="DesignPattern_MandatoryExam" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="DesignPattern_MandatoryExam" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,56 +17,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.MainWithDebugComments" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="eb051ed9-346b-4d23-8591-1df136569c52" name="Default Changelist" comment="" />
-      <created>1575462173381</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1575462173381</updated>
-      <workItem from="1575462176547" duration="6376000" />
-      <workItem from="1575639187334" duration="2962000" />
-      <workItem from="1575726540455" duration="3536000" />
-      <workItem from="1575971945670" duration="2844000" />
-      <workItem from="1576070428812" duration="21748000" />
-      <workItem from="1576177420219" duration="1875000" />
-      <workItem from="1576413203206" duration="3556000" />
-      <workItem from="1576421894960" duration="447000" />
-      <workItem from="1576520045697" duration="517000" />
-      <workItem from="1576520604095" duration="8174000" />
-      <workItem from="1576536454739" duration="1090000" />
-      <workItem from="1578157984205" duration="618000" />
-      <workItem from="1578474087421" duration="599000" />
-      <workItem from="1578649004176" duration="1099000" />
-      <workItem from="1578655720271" duration="285000" />
-      <workItem from="1578656480894" duration="5676000" />
-      <workItem from="1578784996178" duration="53000" />
-      <workItem from="1578824259771" duration="9740000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
