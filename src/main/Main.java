@@ -13,8 +13,6 @@ public class Main {
         GenerateData generateData = new GenerateData();
 
         ArrayList<Item> items = new ArrayList<>();      //List that holds all items in inventory
-        ArrayList<Item> prevState = new ArrayList<>();  //List that holds the previous state of an inventory (For undo's)
-        ArrayList<Item> tmp = new ArrayList<>();        //List to hold temporary values to update items list. Used to fix concurrency/synchronization issue when accessing elements of a list
 
         ItemFactory itemFactory = new ItemFactory();
         Context context = new Context();
@@ -32,42 +30,22 @@ public class Main {
 
             switch (response){
                 case 1:
-                    if(originator.getState() != null){
-                        items = originator.getState();
-                    }
                     showItems(items);
                     break;
                 case 2:
-                    originator.setState(prevState);                     // Set state of the memento to hold the prevState (the items in the list before the new insertion)
+                    originator.setState(new ArrayList<>(items));                     // Set state of the memento to hold the prevState (the items in the list before the new insertion)
                     careTaker.add(originator.saveStateToMemento());     // Add to list of mementos the current memento state
-
-                    prevState.clear();                                  // Clear the prevState array and then populate with the new items after setting originator State. Prevents Heap exception and duplicated elements
-                    prevState.addAll(items);
-
                     items = context.addItemStrategy(prompt, itemFactory, items);
-                    originator.setState(items);
                     break;
                 case 3:
-                    prevState.clear();                                  // Clear the prevState array and then populate with the existing items in the inventory before a deletion occurs.
-                    prevState.addAll(originator.getState());
-
                     showItems(items);
-
+                    originator.setState(new ArrayList<>(items));
+                    careTaker.add(originator.saveStateToMemento());
                     System.out.println("Which item to delete?");
-
                     items = context.deleteItemStrategy(prompt, items);
-                    originator.setState(items);
                     break;
-
                 case 4:
-                    tmp.clear();                                       // Clear the tmp list and populate with prevState elements before an undo is done
-
-                    tmp.addAll(prevState);
-
-                    if(prevState.size() >0){                            // Pop the top element off the array of prevState. This is probably an incorrect way of doing an undo feature.
-                        prevState.remove(prevState.size()-1);
-                    }
-                    originator.setState(tmp);
+                    items = originator.getStateFromMemento(careTaker.get());
                     break;
                 case 5:
                     System.out.println("Bye");

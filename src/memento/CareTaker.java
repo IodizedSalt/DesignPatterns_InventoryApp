@@ -10,11 +10,8 @@ public class CareTaker {
             mementoList.add(state);
         }
 
-        public Memento get(int index){
-            return mementoList.get(index);
+        public Memento get(){
+            return mementoList.get(mementoList.size()-1);
         }
 
-        public Integer getSize(){
-            return mementoList.size();
-        }
 }
