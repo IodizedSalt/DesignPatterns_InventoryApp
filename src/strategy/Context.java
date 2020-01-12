@@ -24,11 +24,6 @@ public class Context {
 
         Item itemToAdd = factory.getItem(input);
 
-        if(itemToAdd.getStrategy() == null){
-            System.out.println("Invalid Selection");
-            return items;
-        }
-
         System.out.println("What is the name of the item?");
         String itemName = scanner.next();
 

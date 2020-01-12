@@ -12,15 +12,15 @@ public class Originator {
     }
 
     public ArrayList<Item> getState(){
-        return state;
+        return this.state;
     }
 
     public Memento saveStateToMemento(){
-        return new Memento(state);
+        return new Memento(this.state);
     }
 
     public ArrayList<Item> getStateFromMemento(Memento memento) {
-        state = memento.getState();
-        return state;
+        this.state = memento.getState();
+        return this.state;
     }
 }

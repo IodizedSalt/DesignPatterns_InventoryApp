@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class MeatStrategy implements Strategy {
 
-    @Override
     public ArrayList<Item> addingNewItem(Scanner scanner, ArrayList<Item> items, Item itemToAdd, String itemName) {
 
         System.out.printf("How many kgs of %s \n ", itemName);

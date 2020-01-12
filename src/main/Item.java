@@ -35,7 +35,6 @@ public abstract class Item {
         return itemExpirationDate;
     }
 
-
     public void setName(String itemName){
         this.itemName = itemName;
     }
@@ -45,7 +44,7 @@ public abstract class Item {
     }
 
    public String displayInformation(){
-        return "Item name: " + this.getName() + " | Quantity: " + this.getAmount();
+        return "Item name: " + this.getName() + " | Quantity: " + this.getAmount() + "\n";
     }
 
 

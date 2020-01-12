@@ -7,9 +7,6 @@ import java.util.Scanner;
 
 public class SpiceStrategy implements Strategy{
 
-
-
-    @Override
     public ArrayList<Item> addingNewItem(Scanner scanner, ArrayList<Item> items, Item itemToAdd, String itemName) {
         if(isDuplicate(items, itemName) != -1){
             int position = isDuplicate(items, itemName);
@@ -29,7 +26,6 @@ public class SpiceStrategy implements Strategy{
 
 
     private static int isDuplicate(ArrayList<Item> items, String itemName) {
-        //Use iterator?
         for (int i = 0; i < items.size() ; i++) {
             if(items.get(i).getName().equalsIgnoreCase(itemName)){
                 return i;

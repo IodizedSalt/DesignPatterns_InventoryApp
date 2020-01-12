@@ -1,20 +1,29 @@
+
+
 package memento;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class CareTaker {
-        private List<Memento> mementoList = new ArrayList<Memento>();
+    private ArrayList<Memento> mementoList = new ArrayList<Memento>();
 
-        public void add(Memento state){
-            mementoList.add(state);
-        }
+    public void add(Memento memento){
+        mementoList.add(memento);
+    }
 
-        public Memento get(int index){
-            return mementoList.get(index);
-        }
+    public void pop(){
+        int mementoListSize = mementoList.size();
 
-        public Integer getSize(){
-            return mementoList.size();
+        if(mementoListSize >= 1){
+            mementoList.remove(mementoListSize-1);
         }
+    }
+
+    public Memento get(){
+        return mementoList.get(getSize()-1);
+    }
+
+    public Integer getSize(){
+        return mementoList.size();
+    }
 }

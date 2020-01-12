@@ -1,13 +1,12 @@
 package item_types;
 
-import strategy.GreensStrategy;
 import main.Item;
+import strategy.NullStrategy;
 import strategy.Strategy;
 
-public class Vegetable extends Item {
+public class NoItem extends Item {
 
     public Strategy getStrategy() {
-        return new GreensStrategy();
+        return new NullStrategy();
     }
-
 }

@@ -1,9 +1,6 @@
 package main;
 
-import item_types.Fruit;
-import item_types.Meat;
-import item_types.Spice;
-import item_types.Vegetable;
+import item_types.*;
 
 public class ItemFactory {
 

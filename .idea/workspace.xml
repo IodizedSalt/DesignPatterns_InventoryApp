@@ -2,49 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb051ed9-346b-4d23-8591-1df136569c52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/item_types/Meat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/item_types/Vegetable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ItemFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/CareTaker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Context.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Fruit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/GenerateData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/GreensStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Item.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/ItemFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/MainWithDebugComments.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Meat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/MeatStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Memento.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/NoItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Originator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Spice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/SpiceStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Strategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/Vegetable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CareTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/memento/CareTaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item_types/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenerateData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GenerateData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GreensStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/GreensStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ItemFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainWithDebugComments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWithDebugComments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Meat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/MeatStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Memento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/memento/Memento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/NoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/memento/Originator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Spice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item_types/Spice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpiceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/SpiceStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/Strategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Vegetable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/item_types/Vegetable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/item_types/Vegetable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/Item.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/NoItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/main/NoItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/memento/CareTaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/memento/CareTaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/memento/Originator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/memento/Originator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/Context.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/MeatStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/MeatStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/SpiceStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DesignPattern_MandatoryExam/strategy/SpiceStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/item_types/Vegetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item_types/Vegetable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ItemFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ItemFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/NoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/item_types/NoItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/memento/CareTaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/memento/CareTaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/memento/Originator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/memento/Originator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/Context.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/GreensStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/GreensStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/MeatStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/MeatStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strategy/SpiceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strategy/SpiceStrategy.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -120,9 +98,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="DesignPattern_MandatoryExam" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.MainWithDebugComments" />
       </list>
     </recent_temporary>
@@ -153,6 +139,8 @@
       <workItem from="1578649004176" duration="1099000" />
       <workItem from="1578655720271" duration="285000" />
       <workItem from="1578656480894" duration="5676000" />
+      <workItem from="1578784996178" duration="53000" />
+      <workItem from="1578824259771" duration="9740000" />
     </task>
     <servers />
   </component>
